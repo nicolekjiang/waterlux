@@ -243,6 +243,7 @@ body{
 			position: absolute;
 			top: 0;
 			opacity: 0.5;
+			width: 100%;
 		}
 		.navbar{
 			.block;
@@ -406,3 +407,98 @@ body{
 		}//p
 	}//footer
 }//body
+
+@media(max-width: 400px){
+	body{
+		.social{
+			li{
+				margin: 0px;
+			}
+		}//social
+		.page{
+			.page_title{
+				font-size: 25px;
+			}
+			.wrapper{
+				.img_wrapper, .content_wrapper{
+					float: none;
+					width: 90%;
+					margin: 0 auto;
+					text-align: center;
+					padding: 5px;
+					p{
+						text-align: justify;
+					}
+				}
+			}//wrapper
+		}//page
+		#page_one{
+			h3{
+				font-size: 13px;
+			}//g3
+			.logo{
+				img{
+					width: 170px;
+					text-align: center;
+				}
+			}//logo
+			#bg_layer{
+				display:none !important;
+			}//bg_layer
+			.navbar{
+				left: auto;
+				margin-left: 0;
+				width: 100%;
+				bottom: 50px;
+				#navbar_listing{
+					li{
+						padding: 0px;
+						margin: 0 20px;
+					}//li
+				}//navbar_listing
+			}//navbar
+		}//page_one
+		#page_two{
+			padding: 0px 15px;
+			.about{
+				padding: 20px 0px 30px 0px;
+				li{
+					width: 90%;
+					margin: 0 auto;
+					display: block;
+					margin-bottom: 40px;
+					p{
+						text-align: justify;
+					}
+				}//li
+			}//about
+		}//page_two
+		#page_three{
+			height: auto;
+			#fbhack{
+				margin-bottom: 100px;
+			}//fbhack
+		}//page_three
+		#page_four{
+			height: auto;
+			.affliation_logos{
+				padding: 0px;
+			}//affliation_logos
+		}//page_four
+		#page_five{
+			padding: 0px 50px 30px;
+			height: auto;
+			.executives{
+				width: 95%;
+				margin: 0 auto;
+				li{
+					width: 90%;
+					margin: 0 auto;
+					.block;
+					margin-bottom: 40px;
+					border-bottom: 1px solid #dddddd;
+				}//li
+			}//executives
+		}//page_five
+	}//body
+}//media
