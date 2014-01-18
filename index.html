@@ -13,9 +13,11 @@
 		<link rel="stylesheet" href="style.css">
 		<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.stellar.js"></script>
+		
 	</head>
 	<body>
-		<div class="page" id="page_one">
+		<div class="page" id="page_one" data-stellar-background-ratio="0.4">
 			<div class="logo"><img src="img/logo_white.png"></div>
 			<h3>Home for UWaterloo UX Designers</h3>
 			<div class="navbar">
@@ -26,7 +28,7 @@
 					<li><a href="https://www.google.com/calendar/embed?src=cevfjn6i1kgdqu7pncqpvpc62o%40group.calendar.google.com&ctz=America/Toronto" id="cal" target="_blank"></a></li>
 				</ul>
 			</div><!-- end navbar -->
-			<div id="bg_layer"><img src="img/bg_layer.png"></div>
+			<div id="bg_layer" data-stellar-ratio="2" data-stellar-horizontal-offset="40" data-stellar-vertical-offset="-30"><img src="img/bg_layer.png"></div>
 		</div><!-- end page_one -->
 		<div class="page" id="page_two">
 			<h2 class="page_title">Greetings from WaterlUX!</h2>
@@ -129,8 +131,8 @@
 				</ul>
 		</div><!--  end page_five -->
 
-		<footer id="page_six">
-			<div id="footer_logo">
+		<footer id="page_six" data-stellar-background-ratio="0" data-stellar-vertical-offset="100">
+			<div id="footer_logo"> 
 				<img id="footer_logo" src="img/logo_white.png">
 			</div>
 			<ul class="social">
@@ -142,4 +144,10 @@
 			<p>© All Rights Reserved by WaterlUX</p>
 		</footer>
 	</body>
+	<script>
+
+		$(window).stellar({
+			 horizontalScrolling: false
+		});
+	</script>
 </html>
