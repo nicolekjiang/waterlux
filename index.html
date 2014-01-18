@@ -8,26 +8,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false">
 		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+
 		<link rel="stylesheet" href="style.css">
 		<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	</head>
 	<body>
 		<div class="page" id="page_one">
-			<div class="table_row">
-				<div class="logo"><img src="/img/logo_white.png"></div>
-			</div><!-- end table_row -->
+			<div class="logo"><img src="/img/logo_white.png"></div>
+			<h3>Home for UWaterloo UX Designers</h3>
 			<div class="navbar">
-				<ul id="navbar_listing">
-					<li>Facebook</li>
-					<li>Twitter</li>
-					<li>Mailing Listing</li>
-					<li>Contact Us</li>
+				<ul class="social" id="navbar_listing">
+					<li><a href="" id="fb"></a></li>
+					<li><a href="" id="twitter"></a></li>
+					<li><a href="" id="email"></a></li>
+					<li><a href="" id="cal"></a></li>
 				</ul>
 			</div><!-- end navbar -->
+			<div id="bg_layer"><img src="img/bg_layer.png"></div>
 		</div><!-- end page_one -->
 		<div class="page" id="page_two">
-			<div class="table_row">
+			<h2 class="page_title">Greetings from WaterlUX!</h2>
 				<ul class="about">
 					<li>
 						<img src="/img/about.png">
@@ -45,23 +47,22 @@
 						<p>Gummi bears I love pastry muffin liquorice bear claw bonbon sweet roll. Lemon drops gingerbread powder sesame snaps carrot cake. Pastry croissant I love cheesecake dragée jelly beans halvah</p>
 					</li>
 				</ul>
-			</div><!--  end table_row -->
 		</div><!-- end page_two -->
 		<div class="page" id="page_three">
 			<h1 class="page_title">UPCOMING EVENTS</h1>
 			<div class="upcoming_event wrapper">
 				<div class="img_wrapper left">
-					<img src="/img/events/event_1.jpg">				
+					<img src="/img/events/event_1.jpg">			
 				</div>
 				<div class="content_wrapper right">
 					<h3 class="content_title">Jelly beans dessert</h3>
 					<p>Chocolate jelly beans dessert I love. Liquorice liquorice I love sugar plum tart jujubes jelly. Apple pie pudding chocolate dessert caramels. Bear claw chocolate cake topping I love I love oat cake sugar plum I love. Gummi bears carrot cake jelly-o. Bonbon biscuit toffee gingerbread. Soufflé tootsie roll gummi bears I love liquorice wafer lollipop cupcake jujubes.</p>
 					<p>pple pie I love chupa chups liquorice. Chupa chups cheesecake donut cheesecake applicake marshmallow lemon drops caramels gummi bears. Tart I love jelly beans bear claw lollipop oat cake soufflé chocolate cake.</p>
-				</div>
+				</div><!-- end content_wrapper -->
 				<div class="clearfix"></div>
 			</div><!-- end upcoming_event -->
 
-			<div class="upcoming_event wrapper">
+			<div class="upcoming_event wrapper" style="border-bottom: 0px">
 				<div class="img_wrapper right" style="margin-right: 0;">
 					<img src="/img/events/event_1.jpg">				
 				</div>
@@ -72,35 +73,56 @@
 				</div>
 				<div class="clearfix"></div>
 			</div><!-- end upcoming_event -->
+			<a href="" class="cta" id="to_blog">Checkout our UX Blog!</a>
 		</div><!-- end page_three -->
 
 		<div class="page" id="page_four">
 			<h1 class="page_title">AFFLIATIONS</h1>
-			<ul class="affliation_logos">
-				<li><img src=""></li>
-				<li><img src=""></li>
-				<li><img src=""></li>
-				<li><img src=""></li>
-			</ul><!-- end affliation_logos -->
+				<ul class="affliation_logos">
+					<li><img src="/img/uwaterloo.jpg"></li>
+					<li><img src="/img/uxwaterloo.jpg"></li>
+					<li><img src="/img/feds.jpg"></li>
+				</ul><!-- end affliation_logos -->
 		</div><!-- end page_four -->
 
 		<div class="page" id="page_five">
-			<h2>So.... who are we again?</h2>
+			<h2 class="page_title">So.... who are we again?</h2>
 			<ul class="executives">
 					<li>
-						<img src="/img/about.png">
-						<h2>About</h2>
-						<p>Gummi bears I love pastry muffin liquorice bear claw bonbon sweet roll. Lemon drops gingerbread powder sesame snaps carrot cake. Pastry croissant I love cheesecake dragée jelly beans halvah</p>
+						<div class="exec_photo">
+							<img src="/img/team/clary.jpg">
+						</div>
+						<h2>Clarisse</h2>
+						<p style="padding-bottom: 10px; font-weight: 500;">2A Software Engineering</p>
+						<p>Something doesn't make sense... let's go poke it with a stick.</p>
+						<div class="exec_social">
+							<a href="" id="twitter"><img src="img/twitter_dark.png"></a>
+							<a href="" id="fb"><img src="img/fb_dark.png"></a>
+						</div><!-- end exec_social -->
 					</li>
 					<li>
-						<img src="/img/mission.png">
-						<h2>Mission</h2>
-						<p>Gummi bears I love pastry muffin liquorice bear claw bonbon sweet roll. Lemon drops gingerbread powder sesame snaps carrot cake. Pastry croissant I love cheesecake dragée jelly beans halvah</p>
+						<div class="exec_photo">
+							<img src="/img/team/kevin.jpg">
+						</div>
+						<h2>Kevin</h2>
+						<p style="padding-bottom: 10px; font-weight: 500;">2A System Design Engineering</p>
+						<p>My self-esteem is directly correlated to how sticky-uppy my hair is that day.</p>
+						<div class="exec_social">
+							<a href="" id="twitter"><img src="img/twitter_dark.png"></a>
+							<a href="" id="fb"><img src="img/fb_dark.png"></a>
+						</div><!-- end exec_social -->
 					</li>
 					<li>
-						<img src="/img/vision.png">
-						<h2>Meeting</h2>
-						<p>Gummi bears I love pastry muffin liquorice bear claw bonbon sweet roll. Lemon drops gingerbread powder sesame snaps carrot cake. Pastry croissant I love cheesecake dragée jelly beans halvah</p>
+						<div class="exec_photo">
+							<img src="/img/team/nicole.jpg">
+						</div>
+						<h2>Nicole</h2>
+						<p style="padding-bottom: 10px; font-weight: 500;">3A Computer Engineering</p>
+						<p>Simplicity is the ultimate sophistication. Man those words were way too long.</p>
+						<div class="exec_social">
+							<a href="" id="twitter"><img src="img/twitter_dark.png"></a>
+							<a href="" id="fb"><img src="img/fb_dark.png"></a>
+						</div><!-- end exec_social -->
 					</li>
 				</ul>
 		</div><!--  end page_five -->
@@ -109,11 +131,11 @@
 			<div id="footer_logo">
 				<img id="footer_logo" src="/img/logo_white.png">
 			</div>
-			<ul id="social">
-				<li><img src="img/footer/fb.png"></li>
-				<li><img src="img/footer/twitter.png"></li>
-				<li><img src="img/footer/email.png"></li>
-				<li><img src="img/footer/calendar.png"></li>
+			<ul class="social">
+				<li><a href="" id="fb"></a></li>
+				<li><a href="" id="twitter"></a></li>
+				<li><a href="" id="email"></a></li>
+				<li><a href="" id="cal"></a></li>
 			</ul><!-- end social -->
 			<p>© All Rights Reserved by WaterlUX</p>
 		</footer>
