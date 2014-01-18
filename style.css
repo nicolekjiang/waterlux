@@ -281,19 +281,19 @@ p {
   transition: all 0s ease 0s;
 }
 #twitter {
-  background: transparent url('/img/twitter.png') center center no-repeat;
+  background: transparent url('img/twitter.png') center center no-repeat;
   background-size: contain;
 }
 #fb {
-  background: transparent url('/img/fb.png') center center no-repeat;
+  background: transparent url('img/fb.png') center center no-repeat;
   background-size: contain;
 }
 #email {
-  background: transparent url('/img/email.png') center center no-repeat;
+  background: transparent url('img/email.png') center center no-repeat;
   background-size: contain;
 }
 #cal {
-  background: transparent url('/img/calendar.png') center center no-repeat;
+  background: transparent url('img/calendar.png') center center no-repeat;
   background-size: contain;
 }
 #twitter,
@@ -318,19 +318,19 @@ p {
   transition: all 0.7s ease 0s;
 }
 #twitter:hover {
-  background: transparent url('/img/twitter_blue.png') center center no-repeat;
+  background: transparent url('img/twitter_blue.png') center center no-repeat;
   background-size: contain;
 }
 #fb:hover {
-  background: transparent url('/img/fb_blue.png') center center no-repeat;
+  background: transparent url('img/fb_blue.png') center center no-repeat;
   background-size: contain;
 }
 #email:hover {
-  background: transparent url('/img/email_blue.png') center center no-repeat;
+  background: transparent url('img/email_blue.png') center center no-repeat;
   background-size: contain;
 }
 #cal:hover {
-  background: transparent url('/img/calendar_blue.png') center center no-repeat;
+  background: transparent url('img/calendar_blue.png') center center no-repeat;
   background-size: contain;
 }
 body .social {
@@ -389,7 +389,7 @@ body .page .wrapper .content_wrapper .content_title {
   color: #50c7cb;
 }
 body #page_one {
-  background: transparent url('/img/bg.jpg') center center no-repeat;
+  background: transparent url('img/bg.jpg') center center no-repeat;
   background-size: cover;
   display: block;
 }
@@ -560,7 +560,7 @@ body #page_five .executives li p {
 }
 body #page_six {
   display: block;
-  background: #4b4b4b url('/img/footer_bg.png') center center no-repeat;
+  background: #4b4b4b url('img/footer_bg.png') center center no-repeat;
   background-size: cover;
 }
 body #page_six #footer_logo img {
