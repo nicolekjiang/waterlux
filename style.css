@@ -383,6 +383,10 @@ body .page .wrapper .content_wrapper {
   width: 70%;
   margin: 0px 10px;
 }
+body .page .wrapper .content_wrapper a {
+  color: #50c7cb;
+  font-weight: 500;
+}
 body .page .wrapper .content_wrapper .content_title {
   font-weight: 600;
   padding: 15px 0px;
@@ -461,6 +465,7 @@ body #page_two .about li {
   display: inline-block;
   width: 25%;
   margin: 4%;
+  vertical-align: text-top;
 }
 body #page_two .about li h2 {
   text-transform: uppercase;
