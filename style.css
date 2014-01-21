@@ -333,23 +333,23 @@ p {
   background: transparent url('img/calendar_blue.png') center center no-repeat;
   background-size: contain;
 }
-body .social {
+body .main .social {
   display: block;
   padding: 30px 0px 70px 0px;
   text-align: center;
 }
-body .social li {
+body .main .social li {
   display: inline-block;
   padding: 15px;
   width: 20px;
   height: 20px;
   margin: 0px 20px;
 }
-body .social li img {
+body .main .social li img {
   width: 30px;
   padding: 0 25px;
 }
-body .page {
+body .main .page {
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -357,47 +357,47 @@ body .page {
   overflow: hidden;
   text-align: center;
 }
-body .page .page_title {
+body .main .page .page_title {
   padding: 60px 0px 30px 0px;
   font-weight: 200;
   font-size: 35px;
 }
-body .page .table_row {
+body .main .page .table_row {
   display: table-row;
 }
-body .page .wrapper {
+body .main .page .wrapper {
   width: 80%;
   text-align: center;
   margin: 0 auto;
   padding: 25px 0px;
 }
-body .page .wrapper .img_wrapper {
+body .main .page .wrapper .img_wrapper {
   width: 20%;
 }
-body .page .wrapper .img_wrapper img {
+body .main .page .wrapper .img_wrapper img {
   width: 90%;
   border-radius: 50%;
 }
-body .page .wrapper .content_wrapper {
+body .main .page .wrapper .content_wrapper {
   text-align: left;
-  width: 70%;
+  width: 75%;
   margin: 0px 10px;
 }
-body .page .wrapper .content_wrapper a {
+body .main .page .wrapper .content_wrapper a {
   color: #50c7cb;
   font-weight: 500;
 }
-body .page .wrapper .content_wrapper .content_title {
+body .main .page .wrapper .content_wrapper .content_title {
   font-weight: 600;
   padding: 15px 0px;
   color: #50c7cb;
 }
-body #page_one {
+body .main #page_one {
   background: transparent url('img/bg.jpg') center center no-repeat;
   background-size: cover;
   display: block;
 }
-body #page_one h3 {
+body .main #page_one h3 {
   text-transform: uppercase;
   color: #50c7cb;
   font-weight: 400;
@@ -407,11 +407,11 @@ body #page_one h3 {
   padding: 20px 50px;
   border-radius: 2px;
 }
-body #page_one .logo {
+body .main #page_one .logo {
   display: block;
   vertical-align: middle;
 }
-body #page_one .logo img {
+body .main #page_one .logo img {
   display: block;
   width: 500px;
   text-align: center;
@@ -419,13 +419,13 @@ body #page_one .logo img {
   padding: 30px;
   margin-top: 160px;
 }
-body #page_one #bg_layer {
+body .main #page_one #bg_layer {
   position: absolute;
   top: 0;
   opacity: 0.5;
   width: 100%;
 }
-body #page_one .navbar {
+body .main #page_one .navbar {
   display: block;
   text-align: center;
   position: absolute;
@@ -435,11 +435,11 @@ body #page_one .navbar {
   left: 50%;
   margin-left: -300px;
 }
-body #page_one .navbar #navbar_listing {
+body .main #page_one .navbar #navbar_listing {
   display: block;
   padding: 0;
 }
-body #page_one .navbar #navbar_listing li {
+body .main #page_one .navbar #navbar_listing li {
   display: inline-block;
   padding: 20px;
   text-transform: uppercase;
@@ -447,222 +447,342 @@ body #page_one .navbar #navbar_listing li {
   color: white;
   font-size: 16px;
 }
-body #page_two {
+body .main #page_two {
   display: table;
   padding: 0px 60px;
   margin: 0 auto;
   width: auto;
   text-align: center;
 }
-body #page_two .about {
+body .main #page_two .about {
   display: block;
   vertical-align: middle;
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  padding: 70px 0px 30px 0px;
+  padding: 0px 0px 30px 0px;
 }
-body #page_two .about li {
+body .main #page_two .about li {
   display: inline-block;
   width: 25%;
   margin: 4%;
   vertical-align: text-top;
 }
-body #page_two .about li h2 {
+body .main #page_two .about li h2 {
   text-transform: uppercase;
   padding: 20px 0px 10px 0px;
   color: #50c7cb;
   font-weight: 500;
 }
-body #page_two .about li p {
+body .main #page_two .about li p {
   font-size: 12px;
 }
-body #page_three {
+body .main #page_three {
   background: #f2f2f2;
   text-align: center;
   position: relative;
 }
-body #page_three .upcoming_event {
+body .main #page_three .upcoming_event {
   border-bottom: 1px solid #dddddd;
 }
-body #page_three .upcoming_event:last-child {
+body .main #page_three .upcoming_event:last-child {
   border-bottom: 0px;
 }
-body #page_four {
+body .main #page_four {
   display: block;
   text-align: center;
 }
-body #page_four .affliation_logos {
+body .main #page_four .affiliation_logos {
   display: block;
   text-align: center;
   margin: 0 auto;
   padding: 90px 50px 30px;
 }
-body #page_four .affliation_logos li {
+body .main #page_four .affiliation_logos li {
   display: inline-block;
   width: 250px;
-  height: 250px;
+  height: auto;
   border: 1px solid #dddddd;
   margin: 5px;
 }
-body #page_four .affliation_logos li img {
+body .main #page_four .affiliation_logos li img {
   width: 100%;
 }
-body #page_five {
+body .main #page_five {
   display: block;
   background: #f2f2f2;
-  width: auto;
-  padding: 0px 80px;
+  width: 100%;
 }
-body #page_five .executives {
+body .main #page_five .page_title {
+  padding: 30px 0px !important;
+}
+body .main #page_five .executives {
+  width: auto;
+  padding: 0px 10px;
   display: table-cell;
   vertical-align: middle;
   width: 80%;
   margin: 0 auto;
   text-align: center;
 }
-body #page_five .executives li {
+body .main #page_five .executives li {
   display: inline-block;
   width: 25%;
-  margin: 4%;
+  margin: 20px;
 }
-body #page_five .executives li h2 {
+body .main #page_five .executives li h2 {
   font-size: 22px;
   font-weight: 600;
   color: #50c7cb;
 }
-body #page_five .executives li .exec_photo {
+body .main #page_five .executives li .exec_photo {
   width: 200px;
   height: 200px;
   overflow: hidden;
   border-radius: 50%;
   margin: 0 auto;
 }
-body #page_five .executives li .exec_photo img {
+body .main #page_five .executives li .exec_photo img {
   width: 100%;
 }
-body #page_five .executives li .exec_social {
+body .main #page_five .executives li .exec_social {
   padding: 15px 0px;
 }
-body #page_five .executives li .exec_social #twitter,
-body #page_five .executives li .exec_social #fb {
+body .main #page_five .executives li .exec_social #twitter,
+body .main #page_five .executives li .exec_social #fb {
   background: #f2f2f2;
   display: inline-block;
   padding: 3px 10px;
   opacity: 0.4;
 }
-body #page_five .executives li .exec_social #twitter img,
-body #page_five .executives li .exec_social #fb img {
+body .main #page_five .executives li .exec_social #twitter img,
+body .main #page_five .executives li .exec_social #fb img {
   width: 23px;
   height: 23px;
   border-radius: 3px;
 }
-body #page_five .executives li h2 {
+body .main #page_five .executives li h2 {
   text-transform: uppercase;
   padding: 20px 0px 10px 0px;
 }
-body #page_five .executives li p {
+body .main #page_five .executives li p {
   font-size: 12px;
 }
-body #page_six {
-  display: block;
+body .main #page_five footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
   background: #4b4b4b url('img/footer_bg.png') center center no-repeat;
   background-size: cover;
 }
-body #page_six #footer_logo img {
+body .main #page_five footer #footer_logo {
+  float: left;
+}
+body .main #page_five footer #footer_logo img {
   display: block;
   width: 250px;
   text-align: center;
-  margin: 0 auto;
-  padding: 30px;
-  padding-top: 100px;
+  margin: 10px auto;
+  padding: 10px;
 }
-body #page_six p {
+body .main #page_five footer .social {
+  float: right;
+  padding: 0px;
+}
+body .main #page_five footer .social li {
+  margin: 10px 20px;
+}
+body .main #page_five footer p {
   color: white;
   font-size: 12px;
   font-weight: 400;
   text-align: center;
   padding-bottom: 10px;
+  clear: right;
+  margin: 0px 20px;
+  float: right;
 }
-@media (max-width: 400px) {
-  body .social li {
+@media (max-width: 1000px) {
+  body .main .page .page_title {
+    padding: 20px 0px;
+  }
+  body .main #page_two {
+    padding: 0px !important;
+  }
+  body .main #page_two .about {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  body .main #page_two .about li {
+    width: 24%;
+  }
+  body .main #page_two .about li img {
+    width: 50%;
+  }
+  body .main #page_three .upcoming_event {
+    padding: 0 !important;
+    width: 100%;
+  }
+  body .main #page_three .upcoming_event .img_wrapper {
+    width: 0;
+    height: 0;
+  }
+  body .main #page_three .upcoming_event .content_wrapper {
+    width: 90%;
+    padding: 20px;
+    float: none;
+    margin: 0 auto;
+  }
+  body .main #page_three .upcoming_event .content_wrapper p {
+    text-align: justify;
+  }
+  body .main #page_four .affiliation_logos {
+    padding: 0px 30px;
+  }
+  body .main #page_four .affiliation_logos li {
+    display: inline-block;
+    width: 30%;
+  }
+  body .main #page_four .affiliation_logos li img {
+    width: 100%;
+  }
+  body .main #page_five .executives li {
+    margin: 0px;
+    width: 30%;
+  }
+  body .main #page_five .executives li .exec_photo {
+    width: 130px;
+    height: 130px;
+  }
+  body .main #page_five footer {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0px 0px 0px;
+  }
+  body .main #page_five footer #footer_logo {
+    float: none;
+  }
+  body .main #page_five footer .social {
+    float: none;
+    padding: 0px;
+  }
+  body .main #page_five footer .social li {
+    margin: 10px 10px;
+  }
+  body .main #page_five footer p {
+    margin: 0px 10px;
+    float: none;
+  }
+}
+@media (max-width: 600px) {
+  body .main .social li {
     margin: 0px;
   }
-  body .page .page_title {
+  body .main .page .page_title {
     font-size: 25px;
   }
-  body .page .wrapper .img_wrapper,
-  body .page .wrapper .content_wrapper {
+  body .main .page .wrapper .img_wrapper,
+  body .main .page .wrapper .content_wrapper {
     float: none;
     width: 90%;
     margin: 0 auto;
     text-align: center;
     padding: 5px;
   }
-  body .page .wrapper .img_wrapper p,
-  body .page .wrapper .content_wrapper p {
+  body .main .page .wrapper .img_wrapper p,
+  body .main .page .wrapper .content_wrapper p {
     text-align: justify;
   }
-  body #page_one h3 {
+  body .main #page_one h3 {
     font-size: 13px;
   }
-  body #page_one .logo img {
-    width: 170px;
+  body .main #page_one .logo img {
+    width: 70%;
     text-align: center;
   }
-  body #page_one #bg_layer {
+  body .main #page_one #bg_layer {
     display: none !important;
   }
-  body #page_one .navbar {
+  body .main #page_one .navbar {
     left: auto;
     margin-left: 0;
     width: 100%;
     bottom: 50px;
   }
-  body #page_one .navbar #navbar_listing li {
+  body .main #page_one .navbar #navbar_listing {
+    margin-bottom: 20px;
+  }
+  body .main #page_one .navbar #navbar_listing li {
     padding: 0px;
     margin: 0 20px;
   }
-  body #page_two {
+  body .main #page_two {
     padding: 0px 15px;
   }
-  body #page_two .about {
+  body .main #page_two .about {
     padding: 20px 0px 30px 0px;
   }
-  body #page_two .about li {
+  body .main #page_two .about li {
     width: 90%;
     margin: 0 auto;
     display: block;
     margin-bottom: 40px;
   }
-  body #page_two .about li p {
+  body .main #page_two .about li img {
+    width: 100px;
+  }
+  body .main #page_two .about li p {
     text-align: justify;
   }
-  body #page_three {
+  body .main #page_three {
     height: auto;
   }
-  body #page_three #fbhack {
+  body .main #page_three #fbhack {
     margin-bottom: 100px;
   }
-  body #page_four {
+  body .main #page_four {
     height: auto;
+    padding-bottom: 20px;
   }
-  body #page_four .affliation_logos {
+  body .main #page_four .affiliation_logos {
     padding: 0px;
   }
-  body #page_five {
-    padding: 0px 50px 30px;
+  body .main #page_four .affiliation_logos li {
+    width: 40%;
+  }
+  body .main #page_five {
     height: auto;
   }
-  body #page_five .executives {
-    width: 95%;
-    margin: 0 auto;
-  }
-  body #page_five .executives li {
-    width: 90%;
+  body .main #page_five .executives li {
+    width: 100%;
     margin: 0 auto;
     display: block;
     margin-bottom: 40px;
     border-bottom: 1px solid #dddddd;
+  }
+  body .main #page_five footer {
+    position: relative;
+    height: 220px;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+  }
+  body .main #page_five footer #footer_logo {
+    float: none;
+  }
+  body .main #page_five footer .social {
+    float: none;
+    padding: 0px;
+  }
+  body .main #page_five footer .social li {
+    margin: 10px 10px;
+  }
+  body .main #page_five footer p {
+    margin: 0px 10px;
+    float: none;
   }
 }
