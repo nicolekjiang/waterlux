@@ -333,6 +333,9 @@ p {
   background: transparent url('img/calendar_blue.png') center center no-repeat;
   background-size: contain;
 }
+.upcoming_event.wrapper {
+  min-height: 130px;
+}
 body .main .social {
   display: block;
   padding: 30px 0px 70px 0px;
@@ -481,12 +484,6 @@ body .main #page_three {
   background: #f2f2f2;
   text-align: center;
   position: relative;
-}
-body .main #page_three .upcoming_event {
-  border-bottom: 1px solid #dddddd;
-}
-body .main #page_three .upcoming_event:last-child {
-  border-bottom: 0px;
 }
 body .main #page_four {
   display: block;
@@ -740,9 +737,6 @@ body .main #page_five footer p {
   }
   body .main #page_three {
     height: auto;
-  }
-  body .main #page_three #fbhack {
-    margin-bottom: 100px;
   }
   body .main #page_four {
     height: auto;

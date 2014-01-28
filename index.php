@@ -1,5 +1,56 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php
+	function getPosts() {
+	    // first post
+	    $request_url = "http://bywaterlux.tumblr.com/api/read?type=text";
+	    $xml = simplexml_load_file( $request_url );
 
+	    $title = $xml->posts->post->{ 'regular-title' };
+	    $post = $xml->posts->post->{ 'regular-body' };
+	    $picture_start = strrpos( $post, '<img' );
+	    $picture_end = strrpos( $post, '/>' );
+	    $picture = substr( $post, $picture_start, ( $picture_end - $picture_start ) + 2 );
+	    $post = substr( $post, 0, $picture_start );
+	    $link = $xml->posts->post[ 'url' ];
+	    $small_post = substr( $post, 0, 500 );
+	    echo
+	    '<div class="upcoming_event wrapper">
+			<div class="img_wrapper left">'.$picture.'</div>
+			<div class="content_wrapper right">
+				<h3 class="content_title">'.$title.'</h3>
+				'.$small_post;
+	    if( strlen( $small_post ) < strlen( $post ) ) {
+	    	echo '... <a href="'.$link.'">(Read More)</a>';
+	    }
+	    echo '<div class="clearfix"></div>
+	    </div><!-- end content_wrapper -->
+		</div><!-- end upcoming_event -->';
+
+	    // second post
+	    $request_url = "http://bywaterlux.tumblr.com/api/read?type=text&start=1";
+	    $xml = simplexml_load_file($request_url);
+
+	    $title = $xml->posts->post->{ 'regular-title' };
+	    $post = $xml->posts->post->{ 'regular-body' };
+	    $picture_start = strrpos( $post, '<img' );
+	    $picture_end = strrpos( $post, '/>', $picture_start );
+	    $picture = substr( $post, $picture_start, ( $picture_end - $picture_start ) + 2 );
+	    $post = substr( $post, 0, $picture_start );
+	    $link = $xml->posts->post['url'];
+	    $small_post = substr( $post, 0, 500 );
+	    echo
+	    '<div class="upcoming_event wrapper">
+			<div class="img_wrapper right" style="margin-right: 0;">'.$picture.'</div>
+			<div class="content_wrapper left">
+				<h3 class="content_title">'.$title.'</h3>
+				'.$small_post;
+	    if( strlen( $small_post ) < strlen( $post ) ) {
+	    	echo '... <a href="'.$link.'">(Read More)</a>';
+	    }
+	    echo '<div class="clearfix"></div>
+	    </div><!-- end content_wrapper -->
+		</div><!-- end upcoming_event -->';
+	}
+?>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>  
 		<title>WaterlUX</title>
@@ -55,31 +106,10 @@
 		</section><!-- end page_two -->
 		<section class="page" id="page_three">
 			<h1 class="page_title">UPCOMING EVENTS</h1>
-			<div class="upcoming_event wrapper">
-				<div class="img_wrapper left">
-					<img src="img/events/jamie.jpg">			
-				</div>
-				<div class="content_wrapper right">
-					<h3 class="content_title">Upcoming Student Session with Nicole Jiang and Jamie Wong</h3>
-					<p>This upcoming Monday, January 20th, we will have two very special student speakers joining us at WaterlUX! <a href="https://www.facebook.com/JamieLFWong">Jamie Wong</a> is currently a 4B Software Engineering student with past work experience at Khan Academy, Square, and Facebook. He’ll be speaking about devtools and infrastructure as they apply to frontend, including devslinters, automated testing, build tools, and module systems.</p>
-					<p>On the other end of the spectrum is <a href="https://www.facebook.com/nicolekjiang">Nicole Jiang</a>, a 3A Computer Engineering student with past work experience Pixlee and Christie Digital Systems. She’ll be teaching us about the software development cycle for front-end design, as well as giving tips and tricks on making designs as slick as hers.</p>
-					<p>Come out to our meeting in RCH 106 at 6pm on Monday to meet Jamie and Nicole and pick their brains!</p>
-				</div><!-- end content_wrapper -->
-				<div class="clearfix"></div>
-			</div><!-- end upcoming_event -->
-
-			<div class="upcoming_event wrapper" id="fbhack" style="border-bottom: 0px">
-				<div class="img_wrapper right" style="margin-right: 0;">
-					<img src="img/events/fbhack.jpg">				
-				</div>
-				<div class="content_wrapper left">
-					<h3 class="content_title">Facebook @ Waterloo Hackathon!</h3>
-					<p>Awesome event coming up for the weekend of January 24th. Register for this event before tickets run out! <a href="http://www.surveymonkey.com/s/WaterlooHackathon">http://www.surveymonkey.com/s/WaterlooHackathon</a></p>
-					<p>At Facebook, we believe that every engineer has great ideas within them. Hackathons are 24-hours of collaborative computer programming that provide an opportunity for you to bring your product from an idea to a prototype overnight.<p>
-					<p>For more information, checkout the <a href="https://www.facebook.com/events/247618075397832/">Facebook Group event!</a> </p>
-				</div>
-				<div class="clearfix"></div>
-			</div><!-- end upcoming_event -->
+			<ul id="posts"></ul>
+			<?php
+				getPosts(); 
+			?>
 			<a href="http://bywaterlux.tumblr.com" class="cta" id="to_blog" target="_blank">Checkout our UX Blog!</a>
 		</section><!-- end page_three -->
 
