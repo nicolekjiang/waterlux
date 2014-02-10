@@ -250,11 +250,6 @@ p {
   bottom: 40px;
   width: 220px;
   margin-left: -150px;
-  -webkit-transition: all 0.7s ease 0s;
-  -moz-transition: all 0.7s ease 0s;
-  -o-transition: all 0.7s ease 0s;
-  -ms-transition: all 0.7s ease 0s;
-  transition: all 0.7s ease 0s;
 }
 .cta:hover {
   background: #3fb6ba;
@@ -599,6 +594,11 @@ body .main #page_five footer p {
   clear: right;
   margin: 0px 20px;
   float: right;
+}
+@media (min-width: 1080px) {
+  .cta {
+    margin-left: 0px;
+  }
 }
 @media (max-width: 1000px) {
   body .main .page .page_title {
