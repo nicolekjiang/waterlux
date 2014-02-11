@@ -46,7 +46,7 @@
 	    if( strlen( $small_post ) < strlen( $post ) ) {
 	    	echo '... <a href="'.$link.'">(Read More)</a>';
 	    }
-	    echo '<div class="clearfix"></div>
+	    echo '<div class="clearfix" style="height: 100px"></div>
 	    </div><!-- end content_wrapper -->
 		</div><!-- end upcoming_event -->';
 	}
