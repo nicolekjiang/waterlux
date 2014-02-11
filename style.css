@@ -738,6 +738,9 @@ body .main #page_five footer p {
   body .main #page_three {
     height: auto;
   }
+  body .main #page_three .upcoming_event .content_wrapper #upcoming_events_clearfix {
+    height: 100px;
+  }
   body .main #page_four {
     height: auto;
     padding-bottom: 20px;
