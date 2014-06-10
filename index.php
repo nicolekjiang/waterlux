@@ -18,6 +18,7 @@
 			<div class="content_wrapper right">
 				<h3 class="content_title">'.$title.'</h3>
 				'.$small_post;
+	    
 	    if( strlen( $small_post ) < strlen( $post ) ) {
 	    	echo '... <a href="'.$link.'">(Read More)</a>';
 	    }
@@ -63,11 +64,8 @@
 		<link rel="icon" type="image/ico" href="img/favicon.ico"/>
 
 		<link rel="stylesheet" href="style.css">
-		<link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
 		<script type="text/javascript" src="js/jquery.stellar.js"></script>
-		<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
-		
 	</head>
 	<body>
 		<div class="main"><div class="onepage-wrapper">
@@ -130,7 +128,7 @@
 						<img src="img/team/clary.jpg">
 					</div>
 					<h2>Clarisse</h2>
-					<p style="padding-bottom: 10px; font-weight: 500;">2A Software Engineering</p>
+					<p style="padding-bottom: 10px; font-weight: 500;">2B Software Engineering</p>
 					<p>Something doesn't make sense... let's go poke it with a stick.</p>
 					<div class="exec_social">
 						<a href="https://twitter.com/claryschneider" id="twitter" target="_blank"><img src="img/twitter_dark.png"></a>
@@ -198,15 +196,9 @@
 		    }
 		};
 		$(document).ready(function(){
-		    if( !isMobile.any() ){
-				$(window).stellar({
-					 horizontalScrolling: false
-				});
-				$(".main").onepage_scroll({
-			        sectionContainer: "section",
-			        responsiveFallback: 600
-			    });
-		    }
+			$(window).stellar({
+				 horizontalScrolling: false
+			});
 		});
 	</script>
 </html>
